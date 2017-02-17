@@ -4,7 +4,6 @@ from selenium import webdriver
 @staticmethod
 def get():
     return webdriver.Remote(
-
                 command_executor=properties.get_settings( )['APPIUM-SERVER-URL'],
                 desired_capabilities={
                     'platformName': "iOS",

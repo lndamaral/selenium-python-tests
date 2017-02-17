@@ -5,7 +5,6 @@ class BaseElement():
     def __init__(self, driver):
         self.driver = driver
 
-
     def type(self, locator, value):
         print "Typing: '%s' - '%s' => '%s'" % (locator[0], locator[1], value)
         try:

@@ -3,7 +3,7 @@ from base.base_element import BaseElement
 
 class SeleniumHomepage(BaseElement):
 
-    ABC = (By.XPATH, "//input[@id='submit']")
+    BTN_GO = (By.XPATH, "//input[@id='submit']")
 
     def __init__(self, driver):
         BaseElement.__init__(self, driver)
@@ -12,4 +12,4 @@ class SeleniumHomepage(BaseElement):
         self.type( (By.XPATH, "//input[@id='q']"), value )
 
     def click_go(self):
-        self.click( self.ABC )
+        self.click( self.BTN_GO )
